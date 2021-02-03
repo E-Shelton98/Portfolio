@@ -219,6 +219,24 @@ nav ul li i {
   font-size: 20px;
 }
 
+.projects-container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  height: 200px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0px 0px 8px 2px lightslategray, 0px 0px 8px 4px white;
+}
+
 .knowledge {
   width: 100%;
 }
