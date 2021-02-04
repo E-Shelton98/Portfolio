@@ -254,12 +254,15 @@ nav ul li i {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
   z-index: 1;
+  transition: opacity 800ms ease-out;
 }
 
 .projects:hover .project-info {
-  visibility: visible
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5)
 }
 
 .project-info .project-text {
@@ -275,7 +278,27 @@ nav ul li i {
   border-radius: 10px;
   position: absolute;
   width: 90%;
+  height: 30%;
   bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tech .icon-container {
+  width: 33%;
+  height: 100%;
+  margin: 3px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  height: 80%;
+  object-fit: contain;
+  filter: grayscale(1);
 }
 
 .knowledge {
