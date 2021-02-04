@@ -281,7 +281,7 @@ nav ul li i {
   height: 30%;
   bottom: 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
