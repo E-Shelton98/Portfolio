@@ -11,6 +11,8 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
@@ -119,6 +121,12 @@ nav ul li i {
   margin-right: 10px;
 }
 
+hr {
+  width: 90%;
+  border-style: dashed;
+  border-color: #9A93D6;
+}
+
 .landing {
   position: relative;
   height: 100vh;
@@ -219,7 +227,31 @@ nav ul li i {
   color: #fff;
 }
 
+.about-me p {
+  padding-top: 10px;
+}
 
+.knowledge {
+  width: 100%;
+  padding: 10px;
+}
+
+.knowledge .tools, .knowledge .frontend, .knowledge .backend {
+  text-align: center;
+  width: 90%;
+  border: 2px solid #5377b5;
+  margin: 10px auto;
+  color: #fff;
+}
+
+.knowledge .tools ul, .knowledge .frontend ul, .knowledge .backend ul {
+  list-style: none;
+  padding: 0;
+}
+
+.knowledge .tools ul li, .knowledge .tools ul li, .knowledge .backend ul li {
+  padding: 3px;
+}
 
 .projects-container {
   width: 95%;
@@ -299,61 +331,6 @@ nav ul li i {
   height: 85%;
   width: 100%;
   object-fit: contain;
-}
-
-.knowledge {
-  width: 100%;
-}
-
-.knowledge .tools {
-  text-align: center;
-  width: 90%;
-  border: 2px solid #5377b5;
-  margin: 10px auto;
-  color: #fff;
-}
-
-.knowledge .tools ul {
-  list-style: none;
-  padding: 0;
-}
-
-.knowledge .tools ul li {
-  padding: 3px;
-}
-
-.knowledge .frontend {
-  text-align: center;
-  width: 90%;
-  border: 2px solid #5377b5;
-  margin: 10px auto;
-  color: #fff;
-}
-
-.knowledge .frontend ul {
-  list-style: none;
-  padding: 0;
-}
-
-.knowledge .frontend ul li {
-  padding: 3px;
-}
-
-.knowledge .backend {
-  text-align: center;
-  width: 90%;
-  border: 2px solid #5377b5;
-  margin: 10px auto 40px;
-  color: #fff;
-}
-
-.knowledge .backend ul {
-  list-style: none;
-  padding: 0;
-}
-
-.knowledge .backend ul li {
-  padding: 3px;
 }
 
 footer {
