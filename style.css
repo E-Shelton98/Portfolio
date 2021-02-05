@@ -202,14 +202,17 @@ nav ul li i {
 
 .about-me {
   height: auto;
-  width: 80%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px;
+  margin: 10px;
 }
 
 .about-me-text {
   font-size: 20px;
   color: #fff;
+  padding: 20px;
 }
 
 .about-me-headshot {
