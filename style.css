@@ -221,7 +221,7 @@ nav ul li i {
 }
 
 .projects-container {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -262,7 +262,7 @@ nav ul li i {
 .projects:hover .project-info {
   visibility: visible;
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.5)
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-info .project-text {
@@ -270,7 +270,7 @@ nav ul li i {
   font-size: 20px;
   position: absolute;
   top: 5%;
-  padding: 0px .5rem;
+  padding: 0px 0.5rem;
 }
 
 .project-info .project-tech {
@@ -288,7 +288,7 @@ nav ul li i {
 .project-tech .icon-container {
   width: 25%;
   height: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
