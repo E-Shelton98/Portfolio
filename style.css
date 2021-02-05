@@ -150,7 +150,7 @@ nav ul li i {
   color: #fff;
   font-size: xx-large;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
 .brand {
@@ -159,6 +159,16 @@ nav ul li i {
   color: #fff;
   text-align: center;
   font-size: x-large;
+}
+
+.landing .headshot {
+  position: relative;
+  background-image: url('https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
 
 .landing a {
@@ -202,30 +212,14 @@ nav ul li i {
 
 .about-me {
   height: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  width: 95%;
   padding: 10px;
   margin: 10px;
-}
-
-.about-me-text {
   font-size: 20px;
   color: #fff;
-  padding: 20px;
 }
 
-.about-me-headshot {
-  background-image: url('https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 250px;
-  height: 250px;
-  border-radius: 30%;
-  align-self: center;
-  justify-self: center;
-  box-shadow: 2px 2px 8px 2px lightslategray, 4px 4px 8px 6px #a183a1;
-}
+
 
 .projects-container {
   width: 95%;
