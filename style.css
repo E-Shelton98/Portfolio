@@ -425,7 +425,7 @@ footer {
   background-color: slategray;
 }
 
-@media only Screen and (max-width: 350px) {
+@media only Screen and (max-width: 375px) {
   .circle-container {
     top: -50px;
     left: -50px;
@@ -484,7 +484,7 @@ footer {
 
   .projects {
     height: 400px;
-    width: 330px;
+    width: 100%;
   }
 
   .project-info {
@@ -547,6 +547,130 @@ footer {
     object-fit: contain;
   }
 }
+
+@media only Screen and (max-width: 425px) {
+  .circle-container {
+    top: -60px;
+    left: -60px;
+  }
+
+  .circle {
+    height: 120px;
+    width: 120px;
+  }
+
+  .circle button {
+    height: 40px;
+  }
+
+  .circle button#open {
+    top: 55%;
+    left: 60%;
+  }
+
+  .circle button#close {
+    top: 60%;
+    left: 45%;
+  }
+
+  .introduction {
+    width: 100vw;
+    font-size: x-large;
+    padding: 40px 10px 10px;
+  }
+
+  .brand {
+    width: 80vw;
+    padding: 0 5px;
+    margin: 0 auto;
+    font-size: large;
+  }
+
+  .landing a .learn-more {
+    animation: none;
+  }
+
+  .about-me {
+    font-size: 15px;
+  }
+
+  .knowledge {
+    width: 90vw;
+  }
+
+  .knowledge .tools,
+  .knowledge .frontend,
+  .knowledge .backend {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .projects {
+    height: 400px;
+    width: 100%;
+  }
+
+  .project-info {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+
+  .project-info .project-text {
+    font-size: 15px;
+    padding: 0px 1rem;
+    text-align: left;
+  }
+
+  .project-info .project-tech {
+    width: 95%;
+  }
+
+  .project-tech .icon-container {
+    width: 30%;
+    padding: 0.25rem;
+  }
+
+  .icon-container img {
+    width: 100%;
+  }
+
+  .form-area {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .social-links-container {
+    margin: 10px;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .social-link {
+    height: 100%;
+    width: 30%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-link img {
+    height: 50%;
+    object-fit: contain;
+  }
+}
+
 @media only screen and (min-width: 750px) {
   .knowledge {
     display: flex;
