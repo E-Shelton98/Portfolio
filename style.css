@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 .hide-scroll::-webkit-scrollbar {
   display: none;
@@ -9,6 +9,7 @@
 }
 
 * {
+  font-family: 'Muli';
   box-sizing: border-box;
   scroll-behavior: smooth;
   padding: 0px;
@@ -23,7 +24,7 @@ body {
 }
 
 .container {
-  background-color: #fafafa;
+  background-color: #4266a4;
   width: 100vw;
   min-height: 100vh;
 }
@@ -36,7 +37,7 @@ body {
 }
 
 .circle {
-  background-color: #4266a4;
+  background-color: #8d85ce;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -124,7 +125,7 @@ nav ul li i {
 hr {
   width: 90%;
   border-style: dashed;
-  border-color: #9A93D6;
+  border-color: #dab1fe;
 }
 
 .landing {
@@ -184,8 +185,7 @@ hr {
 }
 
 .landing a .learn-more {
-  position: relative;
-  bottom: 1%;
+  padding-bottom: 15px;
   color: #fff;
   text-align: center;
   font-size: large;
@@ -231,12 +231,20 @@ hr {
   padding-top: 10px;
 }
 
-.knowledge {
-  width: 100%;
-  padding: 10px;
+.knowledge-container h2 {
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
 }
 
-.knowledge .tools, .knowledge .frontend, .knowledge .backend {
+.knowledge {
+  width: 100%;
+  padding: 3px 0px 10px;
+}
+
+.knowledge .tools,
+.knowledge .frontend,
+.knowledge .backend {
   text-align: center;
   width: 90%;
   border: 2px solid #5377b5;
@@ -244,12 +252,16 @@ hr {
   color: #fff;
 }
 
-.knowledge .tools ul, .knowledge .frontend ul, .knowledge .backend ul {
+.knowledge .tools ul,
+.knowledge .frontend ul,
+.knowledge .backend ul {
   list-style: none;
   padding: 0;
 }
 
-.knowledge .tools ul li, .knowledge .tools ul li, .knowledge .backend ul li {
+.knowledge .tools ul li,
+.knowledge .tools ul li,
+.knowledge .backend ul li {
   padding: 3px;
 }
 
@@ -279,7 +291,7 @@ hr {
   visibility: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -296,23 +308,24 @@ hr {
   visibility: visible;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.project-info .project-title {
+  font-size: 28px;
 }
 
 .project-info .project-text {
-  color: #fff;
-  font-size: 20px;
-  position: absolute;
-  top: 5%;
-  padding: 0px 0.5rem;
+  font-size: 16px;
+  padding: 0px 1rem;
+  text-align: justify;
 }
 
 .project-info .project-tech {
   border: 2px solid #fff;
   border-radius: 10px;
-  position: absolute;
   width: 90%;
   height: 30%;
-  bottom: 10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -330,6 +343,75 @@ hr {
 .icon-container img {
   height: 85%;
   width: 100%;
+  object-fit: contain;
+}
+
+.form-area {
+  height: 500px;
+  width: 65%;
+  display: flex;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#contact-form {
+  background-color: #4266a4;
+  height: auto;
+  width: 60%;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form .form-input {
+  padding: 5px;
+  margin-top: 2px;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact-form .email-input-container,
+#contact-form .message-input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#contact-form .message-input-container .form-input {
+  height: 50px;
+  padding: 3px;
+}
+
+#contact-form .send-form {
+  padding: 10px;
+  margin: 10px;
+  align-self: flex-end;
+  width: 40%;
+  background-color: #8d85ce;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.social-links-container {
+  margin-left: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  height: 30%;
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link img {
+  height: 50%;
   object-fit: contain;
 }
 
