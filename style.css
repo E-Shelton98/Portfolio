@@ -14,6 +14,7 @@
   scroll-behavior: smooth;
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
   top: -100px;
   left: -100px;
   z-index: 3;
+  overflow: hidden;
 }
 
 .circle {
@@ -66,16 +68,18 @@ body {
 }
 
 .circle button#open {
-  left: 60%;
+  left: 65%;
+  top: 50%;
 }
 
 .circle button#close {
-  top: 60%;
+  top: 70%;
+  left: 50%;
   transform: rotate(90deg);
   transform-origin: top left;
 }
 
-.container.show-nav + nav ul {
+.container.show-nav + nav {
   transform: translateX(0);
 }
 
@@ -87,13 +91,15 @@ nav {
   width: 20vw;
   min-width: 150px;
   max-width: 200px;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
 }
 
 nav ul {
   list-style-type: none;
   height: 100vh;
   background-color: rgba(20, 20, 20, 0.8);
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -103,8 +109,6 @@ nav ul {
 }
 
 nav ul li {
-  position: relative;
-  top: 15%;
   text-transform: uppercase;
   color: #fff;
   margin: 40px 0;
@@ -114,11 +118,11 @@ nav ul li {
 nav ul li:hover {
   cursor: pointer;
   transform: scale(1.1);
-  color: #dd0;
+  color: #8d85ce;
 }
 
 nav ul li i {
-  font-size: 20px;
+  font-size: 15px;
   margin-right: 10px;
 }
 
@@ -277,6 +281,7 @@ hr {
 .projects {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 300px;
   width: 600px;
   border: 2px solid black;
@@ -301,6 +306,7 @@ hr {
   bottom: 0px;
   opacity: 0;
   z-index: 1;
+  color: #fff;
   transition: opacity 800ms ease-out;
 }
 
@@ -308,7 +314,6 @@ hr {
   visibility: visible;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
 }
 
 .project-info .project-title {
@@ -355,7 +360,6 @@ hr {
 }
 
 #contact-form {
-  background-color: #4266a4;
   height: auto;
   width: 60%;
   padding: 10px;
@@ -421,13 +425,6 @@ footer {
   background-color: slategray;
 }
 
-@media only Screen and (max-height: 500px) {
-  nav ul li {
-    margin: 20px 0px;
-    top: 30%;
-  }
-}
-
 @media only Screen and (max-width: 350px) {
   .circle-container {
     top: -50px;
@@ -444,16 +441,112 @@ footer {
   }
 
   .circle button#open {
-    left: 50%;
+    top: 55%;
+    left: 60%;
   }
 
   .circle button#close {
-    top: 50%;
-    transform: rotate(90deg);
-    transform-origin: top left;
+    top: 60%;
+    left: 45%;
+  }
+
+  .introduction {
+    width: 100vw;
+    font-size: x-large;
+    padding: 40px 10px 10px;
+  }
+
+  .brand {
+    width: 100vw;
+    padding: 0 5px;
+    font-size: large;
+  }
+
+  .landing .headshot {
+    width: 200px;
+    height: 200px;
+  }
+
+  .landing a .learn-more {
+    animation: none;
+  }
+
+  .about-me {
+    font-size: 15px;
+  }
+
+  .knowledge .tools,
+  .knowledge .frontend,
+  .knowledge .backend {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .projects {
+    height: 400px;
+    width: 330px;
+  }
+
+  .project-info {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  }
+
+  .project-info .project-text {
+    font-size: 15px;
+    padding: 0px 1rem;
+    text-align: left;
+  }
+
+  .project-info .project-tech {
+    width: 95%;
+  }
+
+  .project-tech .icon-container {
+    width: 30%;
+    padding: 0.25rem;
+  }
+
+  .icon-container img {
+    width: 95%;
+  }
+
+  .form-area {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .social-links-container {
+    margin: 10px;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+
+  .social-link {
+    height: 100%;
+    width: 30%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-link img {
+    height: 50%;
+    object-fit: contain;
   }
 }
-
 @media only screen and (min-width: 750px) {
   .knowledge {
     display: flex;
