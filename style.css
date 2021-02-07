@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-.hide-scroll::-webkit-scrollbar {
-  display: none;
+.edit-scroll::-webkit-scrollbar {
+  width: 10px;
 }
-.hide-scroll {
+.edit-scroll::-webkit-scrollbar-track {
+  background: #4266a4;
+}
+.edit-scroll::-webkit-scrollbar-thumb {
+  background: #8d85ce;
+}
+.edit-scroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -19,15 +25,14 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
   margin: 0;
   background-color: #4266a4;
+  height: 100%;
 }
 
 .container {
   background-color: #4266a4;
   width: 100vw;
-  min-height: 100vh;
 }
 
 .circle-container {
@@ -235,6 +240,10 @@ hr {
   padding-top: 10px;
 }
 
+.knowledge-container {
+  width: 100vw;
+}
+
 .knowledge-container h2 {
   color: #fff;
   text-align: center;
@@ -242,15 +251,19 @@ hr {
 }
 
 .knowledge {
-  width: 100%;
+  width: 95%;
   padding: 3px 0px 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .knowledge .tools,
 .knowledge .frontend,
 .knowledge .backend {
   text-align: center;
-  width: 90%;
+  width: 30%;
   border: 2px solid #5377b5;
   margin: 10px auto;
   color: #fff;
@@ -475,6 +488,11 @@ footer {
     font-size: 15px;
   }
 
+  .knowledge {
+    display: flex;
+    flex-direction: column;
+  }
+
   .knowledge .tools,
   .knowledge .frontend,
   .knowledge .backend {
@@ -653,12 +671,13 @@ footer {
     width: 90%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     overflow: hidden;
   }
 
   .social-link {
-    height: 100%;
-    width: 30%;
+    height: 90%;
+    width: 25%;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -671,7 +690,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (max-width: 768px) {
   .knowledge {
     display: flex;
   }
