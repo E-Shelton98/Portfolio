@@ -666,26 +666,26 @@ footer {
   }
 
   .social-links-container {
-    margin: 10px;
-    height: 100%;
-    width: 90%;
+    margin: 10px auto;
+    height: 100px;
+    width: 95%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    overflow: hidden;
+    justify-content: space-between;
   }
 
   .social-link {
-    height: 90%;
-    width: 25%;
-    margin: 5px;
+    height: 80%;
+    width: 30%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .social-link img {
-    height: 50%;
+    height: 75%;
+    width: 75%;
     object-fit: contain;
   }
 }
