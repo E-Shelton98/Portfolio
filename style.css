@@ -438,7 +438,7 @@ footer {
   background-color: slategray;
 }
 
-@media only Screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
   .circle-container {
     top: -50px;
     left: -50px;
@@ -568,6 +568,36 @@ footer {
 }
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
+  .circle-container {
+    top: -80px;
+    left: -80px;
+  }
+
+  .circle {
+    height: 160px;
+    width: 160px;
+    overflow: hidden;
+  }
+
+  .circle button#open {
+    left: 60%;
+    top: 40%;
+  }
+
+  .circle button#close {
+    top: 60%;
+    left: 60%;
+  }
+
+  nav ul {
+    padding-top: 40px;
+  }
+
+  .brand {
+    width: 58vw;
+    margin: 10px auto;
+  }
+
   .knowledge {
     display: flex;
     flex-direction: column;
@@ -590,6 +620,7 @@ footer {
   .knowledge .backend {
     height: 225px;
     width: 60%;
+    border-color: lightsteelblue;
   }
 
   .projects {
@@ -607,4 +638,100 @@ footer {
     width: 90%;
     justify-content: space-between;
   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .circle button#open {
+    left: 63%;
+    top: 48%;
+  }
+
+  .circle button#close {
+    top: 64%;
+    left: 52%;
+  }
+
+  nav ul {
+    padding-top: 50px;
+    font-size: 20px;
+  }
+
+  nav ul li i {
+    font-size: 18px;
+  }
+
+  .introduction {
+    padding: 10% 0 5%;
+  }
+
+  .brand {
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .landing .headshot {
+    width: 300px;
+    height: 300px;
+  }
+
+  .landing a .learn-more {
+    font-size: x-large;
+  }
+
+  .knowledge-container {
+    width: 100vw;
+  }
+
+  .knowledge {
+    width: 100%;
+    padding: 3px 0px 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .knowledge .tools,
+  .knowledge .frontend,
+  .knowledge .backend {
+    width: 45%;
+    border: 2px solid lightsteelblue;
+    margin: 15px 0;
+  }
+
+  .knowledge .tools {
+    align-self: flex-start;
+    margin-left: 10%;
+  }
+
+  .knowledge .frontend {
+    align-self: center;
+  }
+
+  .knowledge .backend {
+    align-self: flex-end;
+    margin-right: 10%;
+  }
+
+  .projects {
+    height: 300px;
+    width: 40%;
+  }
+
+  .projects:nth-child(1) {
+    background-position: left bottom;
+  }
+
+  .projects:nth-child(2) {
+    background-position: right;
+  }
+
+  .projects:nth-child(4) {
+    background-position: left center;
+  }
+
+  .form-area {
+    width: 95%;
+    justify-content: space-around;
+  }
+
 }
