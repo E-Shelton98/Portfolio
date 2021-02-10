@@ -497,8 +497,8 @@ footer {
   .knowledge .tools,
   .knowledge .frontend,
   .knowledge .backend {
-    padding: 10px auto;
-    margin: 4px auto;
+    height: 225px;
+    width: 90%;
   }
 
   .projects {
@@ -545,7 +545,7 @@ footer {
 
   .social-links-container {
     margin: 10px;
-    height: 100%;
+    height: 100px;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -562,12 +562,13 @@ footer {
   }
 
   .social-link img {
-    height: 50%;
+    height: 80%;
+    width: 80%;
     object-fit: contain;
   }
 }
 
-@media only Screen and (max-width: 425px) {
+@media only Screen and (min-width: 376px) {
   .circle-container {
     top: -60px;
     left: -60px;
@@ -691,7 +692,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 426px) {
   .knowledge {
     display: flex;
   }
