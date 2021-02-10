@@ -53,13 +53,12 @@ body {
 .circle button {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  left: 50%;
   height: 100px;
   background: transparent;
   border: 0;
   font-size: 26px;
   color: #fff;
+  overflow: hidden;
 }
 
 .circle button:focus {
@@ -275,7 +274,8 @@ hr {
   align-items: center;
 }
 
-.knowledge .tools ul, .knowledge .backend ul {
+.knowledge .tools ul,
+.knowledge .backend ul {
   grid-template: 1fr 1fr 1fr / 1fr 1fr;
 }
 
@@ -298,7 +298,6 @@ hr {
   background-position: center;
   height: 300px;
   width: 600px;
-  border: 2px solid black;
   border-radius: 10px;
   margin: 15px;
   box-shadow: 0px 0px 8px 2px white, 0px 0px 8px 6px #ba8b8d;
@@ -439,7 +438,7 @@ footer {
   background-color: slategray;
 }
 
-@media only Screen and (max-width: 375px) {
+@media only Screen and (max-width: 425px) {
   .circle-container {
     top: -50px;
     left: -50px;
@@ -568,147 +567,44 @@ footer {
   }
 }
 
-@media only Screen and (min-width: 376px) {
-  .circle-container {
-    top: -60px;
-    left: -60px;
-  }
-
-  .circle {
-    height: 120px;
-    width: 120px;
-  }
-
-  .circle button {
-    height: 40px;
-  }
-
-  .circle button#open {
-    top: 55%;
-    left: 60%;
-  }
-
-  .circle button#close {
-    top: 60%;
-    left: 45%;
-  }
-
-  .introduction {
-    width: 100vw;
-    font-size: x-large;
-    padding: 40px 10px 10px;
-  }
-
-  .brand {
-    width: 80vw;
-    padding: 0 5px;
-    margin: 0 auto;
-    font-size: large;
-  }
-
-  .landing a .learn-more {
-    animation: none;
-  }
-
-  .about-me {
-    font-size: 15px;
-  }
-
+@media only screen and (min-width: 426px) and (max-width: 768px) {
   .knowledge {
-    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .knowledge .tools {
+    margin-left: 10% !important;
+  }
+
+  .knowledge .frontend {
+    margin-left: 20% !important;
+  }
+
+  .knowledge .backend {
+    margin-left: 30%;
   }
 
   .knowledge .tools,
   .knowledge .frontend,
   .knowledge .backend {
-    width: 100%;
-    padding: 10px;
+    height: 225px;
+    width: 60%;
   }
 
   .projects {
-    height: 400px;
-    width: 100%;
+    background-position: top;
   }
 
   .project-info {
     visibility: visible;
-    background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
-  }
-
-  .project-info .project-text {
-    font-size: 15px;
-    padding: 0px 1rem;
-    text-align: left;
-  }
-
-  .project-info .project-tech {
-    width: 95%;
-  }
-
-  .project-tech .icon-container {
-    width: 30%;
-    padding: 0.25rem;
-  }
-
-  .icon-container img {
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: none;
   }
 
   .form-area {
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #contact-form {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .social-links-container {
-    margin: 10px auto;
-    height: 100px;
-    width: 95%;
-    display: flex;
-    flex-direction: row;
+    width: 90%;
     justify-content: space-between;
-  }
-
-  .social-link {
-    height: 80%;
-    width: 30%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .social-link img {
-    height: 75%;
-    width: 75%;
-    object-fit: contain;
-  }
-}
-
-@media only screen and (min-width: 426px) {
-  .knowledge {
-    display: flex;
-  }
-
-  .knowledge .tools {
-    height: 300px;
-    margin: 10px;
-  }
-
-  .knowledge .frontend {
-    height: 300px;
-    margin: 10px;
-  }
-
-  .knowledge .backend {
-    height: 300px;
-    margin: 10px;
   }
 }
