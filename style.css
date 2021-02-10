@@ -397,7 +397,7 @@ hr {
 #contact-form .send-form {
   padding: 10px;
   margin: 10px;
-  align-self: flex-end;
+  align-self: flex-start;
   width: 40%;
   background-color: #8d85ce;
   color: #fff;
