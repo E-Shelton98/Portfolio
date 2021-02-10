@@ -235,17 +235,18 @@ hr {
 }
 
 .knowledge-container {
-  width: 100vw;
+  width: 95vw;
 }
 
 .knowledge-container h2 {
   color: #fff;
   text-align: center;
-  padding-top: 10px;
+  width: 95%;
+  margin: 5px auto;
 }
 
 .knowledge {
-  width: 95%;
+  width: 100%;
   padding: 3px 0px 10px;
   margin: 0 auto;
   display: flex;
@@ -260,6 +261,7 @@ hr {
   width: 30%;
   border: 2px solid #5377b5;
   margin: 10px auto;
+  padding: 5px;
   color: #fff;
 }
 
@@ -267,13 +269,18 @@ hr {
 .knowledge .frontend ul,
 .knowledge .backend ul {
   list-style: none;
-  padding: 0;
+  display: grid;
+  height: 150px;
+  padding-top: 10px;
+  align-items: center;
 }
 
-.knowledge .tools ul li,
-.knowledge .tools ul li,
-.knowledge .backend ul li {
-  padding: 3px;
+.knowledge .tools ul, .knowledge .backend ul {
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+}
+
+.knowledge .frontend ul {
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
 }
 
 .projects-container {
@@ -483,15 +490,15 @@ footer {
   }
 
   .knowledge {
-    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .knowledge .tools,
   .knowledge .frontend,
   .knowledge .backend {
-    width: 100%;
-    padding: 10px;
+    padding: 10px auto;
+    margin: 4px auto;
   }
 
   .projects {
