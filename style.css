@@ -291,7 +291,7 @@ hr {
 }
 
 .projects-container {
-  width: 95%;
+  width: 98%;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -819,9 +819,19 @@ footer {
     margin-right: 10%;
   }
 
-  .projects-link {
+  .projects-container {
+    width: 90vw;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 15px
+  }
+
+  .project-link {
     height: 300px;
-    width: 45%;
+    width: 98%;
+    max-width: 650px;
+    align-self: center;
+    justify-self: center;
   }
 
   .projects:nth-child(1) {
@@ -840,4 +850,4 @@ footer {
     width: 95%;
     justify-content: space-around;
   }
-} */
+}
