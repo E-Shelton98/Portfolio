@@ -518,7 +518,7 @@ footer {
     width: 95vw;
   }
 
-  .project-info {
+  .projects .project-info {
     visibility: visible;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
@@ -640,11 +640,10 @@ footer {
     background-position: top;
   }
 
-  .project-info {
+  .projects .project-info {
     visibility: visible;
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: none;
   }
 
   .form-area {
