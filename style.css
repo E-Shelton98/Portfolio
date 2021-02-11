@@ -106,9 +106,8 @@ nav ul {
   transition: transform 0.5s ease-out;
 }
 
-nav ul  {
+nav ul {
   text-decoration: none;
-  
 }
 
 nav ul li {
@@ -380,7 +379,7 @@ hr {
   padding: 10px;
 }
 
-#contact-form {
+#contact {
   height: auto;
   width: 60%;
   padding: 10px;
@@ -389,26 +388,26 @@ hr {
   flex-direction: column;
 }
 
-#contact-form .form-input {
+#contact .form-input {
   padding: 5px;
   margin-top: 2px;
   border: none;
   border-radius: 5px;
 }
 
-#contact-form .email-input-container,
-#contact-form .message-input-container {
+#contact .email-input-container,
+#contact .message-input-container {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
-#contact-form .message-input-container .form-input {
+#contact .message-input-container .form-input {
   height: 50px;
   padding: 3px;
 }
 
-#contact-form .send-form {
+#contact .send-form {
   padding: 10px;
   margin: 10px;
   align-self: flex-start;
@@ -545,7 +544,7 @@ footer {
     align-items: center;
   }
 
-  #contact-form {
+  #contact {
     width: 100%;
     padding: 10px;
   }
@@ -741,5 +740,99 @@ footer {
     width: 95%;
     justify-content: space-around;
   }
+}
 
+@media only screen and (min-width: 1025px) {
+  .circle button#open {
+    left: 63%;
+    top: 48%;
+  }
+
+  .circle button#close {
+    top: 64%;
+    left: 52%;
+  }
+
+  nav ul {
+    padding-top: 50px;
+    font-size: 20px;
+  }
+
+  nav ul li i {
+    font-size: 18px;
+  }
+
+  .introduction {
+    padding: 10% 0 5%;
+  }
+
+  .brand {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  .landing .headshot {
+    width: 300px;
+    height: 300px;
+  }
+
+  .landing a .learn-more {
+    font-size: x-large;
+  }
+
+  .knowledge-container {
+    width: 100vw;
+  }
+
+  .knowledge {
+    width: 100%;
+    padding: 3px 0px 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .knowledge .tools,
+  .knowledge .frontend,
+  .knowledge .backend {
+    width: 45%;
+    border: 2px solid lightsteelblue;
+    margin: 15px 0;
+  }
+
+  .knowledge .tools {
+    align-self: flex-start;
+    margin-left: 10%;
+  }
+
+  .knowledge .frontend {
+    align-self: center;
+  }
+
+  .knowledge .backend {
+    align-self: flex-end;
+    margin-right: 10%;
+  }
+
+  .projects {
+    height: 300px;
+    width: 45%;
+  }
+
+  .projects:nth-child(1) {
+    background-position: left bottom;
+  }
+
+  .projects:nth-child(2) {
+    background-position: right;
+  }
+
+  .projects:nth-child(4) {
+    background-position: left center;
+  }
+
+  .form-area {
+    width: 95%;
+    justify-content: space-around;
+  }
 }
