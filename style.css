@@ -508,7 +508,7 @@ footer {
     width: 90%;
   }
 
-  .projects {
+  a .projects {
     height: 400px;
     width: 100%;
   }
@@ -631,7 +631,7 @@ footer {
     border-color: lightsteelblue;
   }
 
-  .projects {
+  a .projects {
     background-position: top;
   }
 
@@ -720,7 +720,7 @@ footer {
     margin-right: 10%;
   }
 
-  .projects {
+  a .projects {
     height: 300px;
     width: 40%;
   }
@@ -815,7 +815,7 @@ footer {
     margin-right: 10%;
   }
 
-  .projects {
+  a .projects {
     height: 300px;
     width: 45%;
   }
