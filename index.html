@@ -12,6 +12,26 @@
         emailjs.init('user_aGRjpPNDuxOEGbAbOKUKU')
       })()
     </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById('contact')
+          .addEventListener('submit', function (event) {
+            event.preventDefault()
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = (Math.random() * 100000) | 0
+            // these IDs from the previous steps
+            emailjs.sendForm('contact_service', 'contact_form', this).then(
+              function () {
+                console.log('SUCCESS!')
+              },
+              function (error) {
+                console.log('FAILED...', error)
+              }
+            )
+          })
+      }
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -259,7 +279,8 @@
       </div>
 
       <div class="form-area">
-        <form action="" id="contact">
+        <form id="contact">
+          <input type="hidden" name="contact_number">
           <div class="form-description">
             <h3>Get In Touch.</h3>
             <p>
@@ -274,6 +295,7 @@
               class="form-input"
               id="writers-name"
               placeholder="Your Name"
+              name="user_name"
             />
           </div>
           <div class="email-input-container">
@@ -283,6 +305,7 @@
               class="form-input"
               id="email-input"
               placeholder="Email"
+              name="user_email"
             />
           </div>
           <div class="email-input-container">
@@ -292,6 +315,7 @@
               class="form-input"
               id="email-subject"
               placeholder="Email Subject"
+              name="subject"
             />
           </div>
           <div class="message-input-container">
@@ -301,9 +325,10 @@
               class="form-input"
               id="email-message"
               placeholder="Email Message"
+              name="message"
             ></textarea>
           </div>
-          <button class="send-form">Send Email!</button>
+          <input type="submit" class="send-form" value="Send Email"/>
         </form>
 
         <div class="social-links-container">
