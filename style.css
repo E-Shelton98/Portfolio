@@ -424,6 +424,14 @@ hr {
   border-radius: 5px;
 }
 
+#contact .send-form:hover {
+  background-color: #7c74bd;
+}
+
+.send-form:focus {
+  outline: 1px solid #dab1fe
+}
+
 .social-links-container {
   margin-left: 30px;
   height: 100%;
