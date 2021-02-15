@@ -371,7 +371,7 @@ hr {
   align-items: center;
 }
 
-.icon-container img {
+.icon-container a {
   height: 85%;
   width: 100%;
   object-fit: contain;
@@ -448,8 +448,14 @@ hr {
   align-items: center;
 }
 
-.social-link img {
+.social-link a {
   height: 50%;
+  width: height / 2;
+  display: flex;
+}
+
+.social-link a img {
+  height: 100%;
   object-fit: contain;
 }
 
@@ -581,9 +587,16 @@ footer {
     align-items: center;
   }
 
-  .social-link img {
+  .social-link a {
     height: 80%;
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-link img {
+    height: 100%;
     object-fit: contain;
   }
 }
