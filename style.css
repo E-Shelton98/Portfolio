@@ -377,7 +377,7 @@ hr {
   object-fit: contain;
 }
 
-.project-tech .mini-projects-tech {
+.project-tech .non-logo-projects-tech {
   padding: 10px;
 }
 
@@ -866,10 +866,6 @@ footer {
     max-width: 650px;
     align-self: center;
     justify-self: center;
-  }
-
-  .projects:nth-child(1) {
-    background-position: left bottom;
   }
 
   .projects:nth-child(2) {
