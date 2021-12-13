@@ -458,6 +458,10 @@ hr {
   display: flex;
 }
 
+.social-link a:hover {
+  filter: invert(100%);
+}
+
 .social-link a img {
   height: 100%;
   object-fit: contain;
