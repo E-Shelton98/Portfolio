@@ -97,7 +97,6 @@ nav ul {
   list-style-type: none;
   height: 100vh;
   background-color: rgba(20, 20, 20, 0.8);
-  /* transform: translateX(-100%); */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -319,7 +318,6 @@ hr {
 
 .projects .project-info {
   position: absolute;
-  visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -330,16 +328,9 @@ hr {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  opacity: 0;
   z-index: 1;
   color: #fff;
-  transition: opacity 800ms ease-out;
-}
-
-.projects:hover .project-info {
-  visibility: visible;
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5)
 }
 
 .project-info .project-title {
@@ -381,7 +372,7 @@ hr {
   padding: 10px;
 }
 
-.form-area {
+.contact-container {
   height: 500px;
   display: flex;
   margin: 10px auto;
@@ -389,55 +380,62 @@ hr {
 }
 
 #contact {
-  height: auto;
-  padding: 10px;
-  color: white;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
 }
 
-#contact .form-input {
-  padding: 8px;
-  margin-top: 2px;
-  border: none;
-  border-radius: 5px;
+#contact .email-container {
+  height: 50%;
   width: 100%;
-}
-
-#contact .email-input-container,
-#contact .message-input-container {
+  margin: 5px;
   display: flex;
   flex-direction: column;
-  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-#contact .message-input-container #email-message {
-  height: 75px;
-  padding: 3px;
+#contact .email-container a {
+  color: white;
+  margin: 5px;
 }
 
-#contact .send-form {
-  padding: 12px;
-  margin: 10px 0px;
-  align-self: flex-start;
-  width: 40%;
-  background-color: #8d85ce;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+#contact .email-container a:hover {
+  color: black;
 }
 
-#contact .send-form:hover {
-  background-color: #7c74bd;
+#contact .resume-container {
+  height: 50%;
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
-.send-form:focus {
-  outline: 1px solid #dab1fe;
+#contact .resume-container a {
+  color: white;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .resume-container a i {
+  font-size: 50px;
+  object-fit: contain;
+  
+}
+
+#contact .resume-container a:hover {
+  color: black;
 }
 
 .social-links-container {
-  margin-left: 30px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -468,9 +466,34 @@ hr {
 }
 
 footer {
-  height: 5vh;
+  height: 10vh;
   width: 100vw;
   background-color: slategray;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+footer ul li {
+  text-transform: uppercase;
+  margin: 10px 0px 15px;
+}
+
+footer ul li a:hover {
+  color: #000;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer ul li a i {
+  font-size: 15px;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -565,7 +588,7 @@ footer {
     width: 95%;
   }
 
-  .form-area {
+  .contact-container {
     height: auto;
     width: 100%;
     flex-direction: column;
@@ -675,7 +698,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .form-area {
+  .contact-container {
     width: 90%;
     justify-content: space-between;
   }
@@ -770,7 +793,7 @@ footer {
     background-position: left center;
   }
 
-  .form-area {
+  .contact-container {
     width: 95%;
     justify-content: space-around;
   }
@@ -876,7 +899,7 @@ footer {
     justify-self: center;
   }
 
-  .form-area {
+  .contact-container {
     width: 95%;
     justify-content: space-around;
   }
