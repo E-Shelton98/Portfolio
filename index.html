@@ -3,35 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      ;(function () {
-        emailjs.init('user_aGRjpPNDuxOEGbAbOKUKU')
-      })()
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById('contact')
-          .addEventListener('submit', function (event) {
-            event.preventDefault()
-            // generate a five digit number for the contact_number variable
-            this.contact_number.value = (Math.random() * 100000) | 0
-            // these IDs from the previous steps
-            emailjs.sendForm('contact_service', 'contact_form', this).then(
-              function () {
-                console.log('SUCCESS!')
-              },
-              function (error) {
-                console.log('FAILED...', error)
-              }
-            )
-          })
-      }
-    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -57,7 +28,8 @@
             reaching for the stars.
           </h1>
           <p class="brand">
-            I am an innovative full-stack developer who brings new ideas and loves developing solutions to complex problems.
+            I am an innovative full-stack developer who brings new ideas and
+            loves developing solutions to complex problems.
           </p>
         </div>
         <div class="headshot"></div>
@@ -138,18 +110,19 @@
           >
             <div
               class="projects"
-              style="
-                background-image: url(./Images/tmdb-movies.png);
-              "
+              style="background-image: url(./Images/tmdb-movies.png)"
             >
               <div class="project-info" id="tmdb">
                 <h3 class="project-title">TMDB-Movies</h3>
                 <p class="project-text">
-                  An extension of a tutorial from 50 Projects in 50 Days, allows for searching of a movie or television show name and displays matches. Has a backend to hide the API key from being public. Hosted on Vercel.
+                  An extension of a tutorial from 50 Projects in 50 Days, allows
+                  for searching of a movie or television show name and displays
+                  matches.
                 </p>
                 <div class="project-tech">
                   <p class="non-logo-projects-tech">
-                    This project is done entirely in vanilla Javascript, HTML, and CSS, besides the backend which is using Express and hosted on Heroku.
+                    This project is done almost entirely in vanilla Javascript, HTML,
+                    and CSS.
                   </p>
                 </div>
               </div>
@@ -170,13 +143,11 @@
                   <h3 class="project-title">My-Mini-Projects</h3>
                   <p class="project-text">
                     A mini projects album designed to help easily show small
-                    projects such as 50 Projects in 50 Days, or testing out new
-                    libraries.
+                    projects such as 50 Projects in 50 Days.
                   </p>
                   <div class="project-tech">
                     <p class="non-logo-projects-tech">
-                      Primarily HTML, CSS, and Vanilla Javascript. Occasionally
-                      a dash of other libraries here and there.
+                      Primarily HTML, CSS, and Vanilla Javascript.
                     </p>
                   </div>
                 </div>
@@ -199,11 +170,10 @@
                 <div class="project-info">
                   <h3 class="project-title">Sticky Task</h3>
                   <p class="project-text">
-                    A project that allows for a person to assign tasks to there
+                    Assign tasks to your
                     'workers'. Designed to be used by supervisors, teachers,
                     parents, or anyone who needs to simply and efficiently
-                    delegate tasks to people while keeping track of what is
-                    assigned and has been completed.
+                    delegate tasks to people while keeping track of what is assigned and completed.
                   </p>
                   <div class="project-tech">
                     <div class="icon-container">
@@ -224,46 +194,20 @@
         <hr />
       </div>
 
-      <div class="form-area">
-        <form id="contact">
-          <input type="hidden" name="contact_number" />
-          <div class="form-description">
-            <h3>Get In Touch.</h3>
-            <p>
-              Have questions about a project, or want to simply chat about code?
-              Fill out the form and I'll be in touch with lightning speed.
-            </p>
+      <div class="contact-container">
+        <div id="contact">
+          <div class="email-container">
+            <h3>Email:</h3>
+            <a href="mailto:codewerik@gmail.com"><h3>codewerik@gmail.com</h3></a>
           </div>
-          <div class="email-input-container">
-            <label for="emailers name" class="form-label">Name</label>
-            <input
-              type="text"
-              class="form-input"
-              id="writers-name"
-              name="user_name"
-            />
+
+          <div class="resume-container">
+            <h3>Resume:</h3>
+            <a href="https://docs.google.com/document/d/1t3FPCWbCkmIb2SkV1KufcsTqjowmkKT5HhVfWtbvS20/edit?usp=sharing" target="_blank">
+              <i class="fas fa-file"></i>
+            </a>
           </div>
-          <div class="email-input-container">
-            <label for="writers email" class="form-label">Email Address</label>
-            <input
-              type="email"
-              class="form-input"
-              id="email-input"
-              name="user_email"
-            />
-          </div>
-          
-          <div class="message-input-container">
-            <label for="email message" class="form-label">Message</label>
-            <textarea
-              type="text"
-              class="form-input"
-              id="email-message"
-              name="message"
-            ></textarea>
-          </div>
-          <input type="submit" class="send-form" value="Send Email" />
-        </form>
+        </div>
 
         <div class="social-links-container">
           <div class="social-link">
@@ -291,6 +235,20 @@
     <nav>
       <ul>
         <li>
+          <a href="#home" class="nav-link"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link"><i class="fas fa-user-alt"></i>About Me</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i>Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <footer>
+      <ul>
+        <li>
           <a href="#home"><i class="fas fa-home"></i>Home</a>
         </li>
         <li>
@@ -300,9 +258,7 @@
           <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
         </li>
       </ul>
-    </nav>
-
-    <footer></footer>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

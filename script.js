@@ -1,13 +1,18 @@
 const open = document.getElementById('open')
 const close = document.getElementById('close')
 const container = document.querySelector('.container')
+const navLinks = document.querySelectorAll('.nav-link')
 const infos = document.querySelectorAll('.info')
-const formInput = document.querySelectorAll('.form-input')
-const formSubmit = document.querySelector('.send-form')
 
 open.addEventListener('click', () => container.classList.add('show-nav'))
 
 close.addEventListener('click', () => container.classList.remove('show-nav'))
+
+navLinks.forEach((navLink) => {
+  navLink.addEventListener('click', () =>
+    container.classList.remove('show-nav')
+  )
+})
 
 window.addEventListener('scroll', checkInfo)
 
@@ -22,8 +27,3 @@ function checkInfo() {
     }
   })
 }
-
-formSubmit.addEventListener('click', () => {
-  console.log(formInput.value)
-  alert('Email Sent!')
-})
