@@ -465,37 +465,6 @@ hr {
   object-fit: contain;
 }
 
-footer {
-  height: 10vh;
-  width: 100vw;
-  background-color: slategray;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-around;
-  margin: 10px;
-}
-
-footer ul li {
-  text-transform: uppercase;
-  margin: 10px 0px 15px;
-}
-
-footer ul li a:hover {
-  color: #000;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-footer ul li a i {
-  font-size: 15px;
-  margin-right: 10px;
-}
-
 @media only screen and (max-width: 575px) {
   .circle-container {
     top: -50px;
