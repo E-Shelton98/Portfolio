@@ -9,19 +9,19 @@
 }
 
 * {
-  font-family: 'Muli';
   box-sizing: border-box;
-  scroll-behavior: smooth;
-  padding: 0px;
+  font-family: 'Muli';
   margin: 0px;
   overflow-x: hidden;
+  padding: 0px;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
   background-color: #4266a4;
+  font-family: 'Lato', sans-serif;
   height: 100%;
+  margin: 0;
 }
 
 .container {
@@ -30,20 +30,20 @@ body {
 }
 
 .circle-container {
+  left: -100px;
+  overflow: hidden;
   position: fixed;
   top: -100px;
-  left: -100px;
   z-index: 3;
-  overflow: hidden;
 }
 
 .circle {
   background-color: #8d85ce;
-  height: 200px;
-  width: 200px;
   border-radius: 50%;
+  height: 200px;
   position: relative;
   transition: transform 0.5s linear;
+  width: 200px;
 }
 
 .container.show-nav .circle {
@@ -51,14 +51,14 @@ body {
 }
 
 .circle button {
-  cursor: pointer;
-  position: absolute;
-  height: 100px;
   background: transparent;
   border: 0;
-  font-size: 26px;
   color: #fff;
+  cursor: pointer;
+  font-size: 26px;
+  height: 100px;
   overflow: hidden;
+  position: absolute;
 }
 
 .circle button:focus {
@@ -71,8 +71,8 @@ body {
 }
 
 .circle button#close {
-  top: 70%;
   left: 50%;
+  top: 70%;
   transform: rotate(90deg);
   transform-origin: top left;
 }
@@ -82,26 +82,26 @@ body {
 }
 
 nav {
-  position: fixed;
   bottom: 0;
-  z-index: 2;
   height: 100vh;
-  width: 20vw;
-  min-width: 150px;
   max-width: 200px;
+  min-width: 150px;
+  position: fixed;
   transform: translateX(-100%);
   transition: transform 0.5s ease-out;
+  width: 20vw;
+  z-index: 2;
 }
 
 nav ul {
-  list-style-type: none;
-  height: 100vh;
+  align-items: flex-end;
   background-color: rgba(20, 20, 20, 0.8);
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  padding-left: 5px;
+  height: 100vh;
+  list-style-type: none;
   margin-top: 0px;
+  padding-left: 5px;
   transition: transform 0.5s ease-out;
 }
 
@@ -110,10 +110,10 @@ nav ul {
 }
 
 nav ul li {
-  text-transform: uppercase;
   color: #fff;
   margin: 40px 0;
   padding-right: 10%;
+  text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -121,8 +121,8 @@ nav ul li a:hover {
 }
 
 nav ul li a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
 }
 
 nav ul li a i {
@@ -131,61 +131,61 @@ nav ul li a i {
 }
 
 hr {
-  width: 90%;
-  border-style: dashed;
   border-color: #dab1fe;
+  border-style: dashed;
+  width: 90%;
 }
 
 .landing {
-  position: relative;
-  height: 100vh;
-  min-height: 630px;
-  width: 100vw;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   justify-content: space-between;
-  align-items: center;
+  min-height: 630px;
+  position: relative;
+  width: 100vw;
 }
 
 .landing::before {
-  content: '';
   background-image: url('https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2090&q=80');
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
   bottom: 0px;
+  content: '';
   left: 0px;
   opacity: 0.8;
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 
 .introduction {
-  position: relative;
-  width: 70vw;
   color: #fff;
   font-size: xx-large;
-  text-align: center;
   padding-top: 10%;
+  position: relative;
+  text-align: center;
+  width: 70vw;
 }
 
 .brand {
-  position: relative;
-  width: 70vw;
   color: #fff;
-  text-align: center;
   font-size: x-large;
+  position: relative;
+  text-align: center;
+  width: 70vw;
 }
 
 .landing .headshot {
-  position: relative;
-  background-image: url('https://res.cloudinary.com/dm5cjaisp/image/upload/v1600230047/IMG_0272_bxi0xu.jpg');
-  background-size: cover;
+  background-image: url('./Images/headshot.png');
   background-position: center;
-  width: 250px;
+  background-size: cover;
+  border-radius: 25%;
   height: 250px;
-  border-radius: 50%;
+  position: relative;
+  width: 250px;
 }
 
 .landing a {
@@ -193,13 +193,13 @@ hr {
 }
 
 .landing a .learn-more {
-  padding-bottom: 15px;
+  animation: pulse 2s infinite;
   color: #fff;
-  text-align: center;
   font-size: large;
+  padding-bottom: 15px;
+  text-align: center;
 
   transform: scale(1);
-  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
@@ -219,20 +219,20 @@ hr {
 }
 
 .information {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #4266a4;
+  display: flex;
+  flex-direction: column;
   height: auto;
 }
 
 .about-me {
-  height: auto;
-  width: 95%;
-  padding: 10px;
-  margin: 10px;
-  font-size: 20px;
   color: #fff;
+  font-size: 20px;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  width: 95%;
 }
 
 .about-me p {
@@ -245,39 +245,39 @@ hr {
 
 .knowledge-container h2 {
   color: #fff;
+  margin: 5px auto;
   text-align: center;
   width: 95%;
-  margin: 5px auto;
 }
 
 .knowledge {
-  width: 100%;
-  padding: 3px 0px 10px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 0 auto;
+  padding: 3px 0px 10px;
+  width: 100%;
 }
 
 .knowledge .tools,
 .knowledge .frontend,
 .knowledge .backend {
-  text-align: center;
-  width: 30%;
   border: 2px solid #5377b5;
+  color: #fff;
   margin: 10px auto;
   padding: 5px;
-  color: #fff;
+  text-align: center;
+  width: 30%;
 }
 
 .knowledge .tools ul,
 .knowledge .frontend ul,
 .knowledge .backend ul {
-  list-style: none;
+  align-items: center;
   display: grid;
   height: 150px;
+  list-style: none;
   padding-top: 10px;
-  align-items: center;
 }
 
 .knowledge .tools ul,
@@ -290,47 +290,47 @@ hr {
 }
 
 .projects-container {
-  width: 98%;
-  padding: 10px;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  padding: 10px;
+  width: 98%;
 }
 
 .project-link {
-  display: block;
-  height: 300px;
-  width: 600px;
-  margin: 15px;
   border-radius: 10px;
   box-shadow: 0px 0px 8px 3px #dab1fe;
+  display: block;
+  height: 300px;
+  margin: 15px;
   position: relative;
+  width: 600px;
 }
 
 .projects {
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
 
 .projects .project-info {
-  position: absolute;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0px;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   height: 100%;
-  width: 100%;
-  top: 0px;
+  justify-content: space-around;
   left: 0px;
+  position: absolute;
   right: 0px;
-  bottom: 0px;
+  top: 0px;
+  width: 100%;
   z-index: 1;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5)
 }
 
 .project-info .project-title {
@@ -344,28 +344,28 @@ hr {
 }
 
 .project-info .project-tech {
+  align-items: center;
   border: 2px solid #fff;
   border-radius: 10px;
-  width: 90%;
-  height: 30%;
   display: flex;
+  height: 30%;
   justify-content: space-around;
-  align-items: center;
+  width: 90%;
 }
 
 .project-tech .icon-container {
-  width: 25%;
-  height: 100%;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 25%;
 }
 
 .icon-container img {
   height: 85%;
-  width: 100%;
   object-fit: contain;
+  width: 100%;
 }
 
 .project-tech .non-logo-projects-tech {
@@ -373,27 +373,27 @@ hr {
 }
 
 .contact-container {
-  height: 500px;
   display: flex;
+  height: 500px;
   margin: 10px auto;
   padding: 10px;
 }
 
 #contact {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 #contact .email-container {
-  height: 50%;
-  width: 100%;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: center;
+  margin: 5px;
+  width: 100%;
 }
 
 #contact .email-container a {
@@ -406,29 +406,28 @@ hr {
 }
 
 #contact .resume-container {
-  height: 50%;
-  width: 100%;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: center;
+  margin: 5px;
+  width: 100%;
 }
 
 #contact .resume-container a {
-  color: white;
-  height: 50%;
-  width: 50%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  color: white;
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  width: 50%;
 }
 
 #contact .resume-container a i {
   font-size: 50px;
   object-fit: contain;
-  
 }
 
 #contact .resume-container a:hover {
@@ -436,24 +435,24 @@ hr {
 }
 
 .social-links-container {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .social-link {
-  height: 30%;
-  width: 100%;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  margin: 5px;
+  width: 100%;
 }
 
 .social-link a {
+  display: flex;
   height: 50%;
   width: height / 2;
-  display: flex;
 }
 
 .social-link a:hover {
@@ -467,8 +466,8 @@ hr {
 
 @media only screen and (max-width: 575px) {
   .circle-container {
-    top: -50px;
     left: -50px;
+    top: -50px;
   }
 
   .circle {
@@ -481,30 +480,30 @@ hr {
   }
 
   .circle button#open {
-    top: 55%;
     left: 60%;
+    top: 55%;
   }
 
   .circle button#close {
-    top: 60%;
     left: 45%;
+    top: 60%;
   }
 
   .introduction {
-    width: 100vw;
     font-size: x-large;
     padding: 40px 10px 10px;
+    width: 100vw;
   }
 
   .brand {
-    width: 100vw;
-    padding: 0 5px;
     font-size: large;
+    padding: 0 5px;
+    width: 100vw;
   }
 
   .landing .headshot {
-    width: 200px;
     height: 200px;
+    width: 200px;
   }
 
   .landing a .learn-more {
@@ -516,8 +515,8 @@ hr {
   }
 
   .knowledge {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   .knowledge .tools,
@@ -533,9 +532,9 @@ hr {
   }
 
   .projects .project-info {
-    visibility: visible;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
+    visibility: visible;
   }
 
   .project-info .project-text {
@@ -549,8 +548,8 @@ hr {
   }
 
   .project-tech .icon-container {
-    width: 30%;
     padding: 0.25rem;
+    width: 30%;
   }
 
   .icon-container img {
@@ -558,41 +557,41 @@ hr {
   }
 
   .contact-container {
+    align-items: center;
+    flex-direction: column;
     height: auto;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
   }
 
   #contact {
-    width: 100%;
     padding: 10px;
+    width: 100%;
   }
 
   .social-links-container {
-    margin: 10px;
-    height: 100px;
-    width: 90%;
     display: flex;
     flex-direction: row;
+    height: 100px;
+    margin: 10px;
     overflow: hidden;
+    width: 90%;
   }
 
   .social-link {
-    height: 100%;
-    width: 30%;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 5px;
+    width: 30%;
   }
 
   .social-link a {
-    height: 80%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    width: 80%;
   }
 
   .social-link img {
@@ -603,14 +602,14 @@ hr {
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .circle-container {
-    top: -80px;
     left: -80px;
+    top: -80px;
   }
 
   .circle {
     height: 160px;
-    width: 160px;
     overflow: hidden;
+    width: 160px;
   }
 
   .circle button#open {
@@ -619,8 +618,8 @@ hr {
   }
 
   .circle button#close {
-    top: 60%;
     left: 60%;
+    top: 60%;
   }
 
   nav ul {
@@ -628,8 +627,8 @@ hr {
   }
 
   .brand {
-    width: 58vw;
     margin: 10px auto;
+    width: 58vw;
   }
 
   .knowledge {
@@ -652,9 +651,9 @@ hr {
   .knowledge .tools,
   .knowledge .frontend,
   .knowledge .backend {
+    border-color: lightsteelblue;
     height: 225px;
     width: 60%;
-    border-color: lightsteelblue;
   }
 
   .projects {
@@ -662,14 +661,14 @@ hr {
   }
 
   .projects .project-info {
-    visibility: visible;
-    opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
   }
 
   .contact-container {
-    width: 90%;
     justify-content: space-between;
+    width: 90%;
   }
 }
 
@@ -680,13 +679,13 @@ hr {
   }
 
   .circle button#close {
-    top: 64%;
     left: 52%;
+    top: 64%;
   }
 
   nav ul {
-    padding-top: 50px;
     font-size: 20px;
+    padding-top: 50px;
   }
 
   nav ul li i {
@@ -698,13 +697,13 @@ hr {
   }
 
   .brand {
-    width: 60vw;
     margin: 0 auto;
+    width: 60vw;
   }
 
   .landing .headshot {
-    width: 300px;
     height: 300px;
+    width: 300px;
   }
 
   .landing a .learn-more {
@@ -716,19 +715,19 @@ hr {
   }
 
   .knowledge {
-    width: 100%;
-    padding: 3px 0px 10px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 3px 0px 10px;
+    width: 100%;
   }
 
   .knowledge .tools,
   .knowledge .frontend,
   .knowledge .backend {
-    width: 45%;
     border: 2px solid lightsteelblue;
     margin: 15px 0;
+    width: 45%;
   }
 
   .knowledge .tools {
@@ -763,8 +762,8 @@ hr {
   }
 
   .contact-container {
-    width: 95%;
     justify-content: space-around;
+    width: 95%;
   }
 }
 
@@ -775,13 +774,13 @@ hr {
   }
 
   .circle button#close {
-    top: 64%;
     left: 52%;
+    top: 64%;
   }
 
   nav ul {
-    padding-top: 50px;
     font-size: 20px;
+    padding-top: 50px;
   }
 
   nav ul li i {
@@ -793,13 +792,13 @@ hr {
   }
 
   .brand {
-    width: 50vw;
     margin: 0 auto;
+    width: 50vw;
   }
 
   .landing .headshot {
-    width: 300px;
     height: 300px;
+    width: 300px;
   }
 
   .landing a .learn-more {
@@ -811,19 +810,19 @@ hr {
   }
 
   .knowledge {
-    width: 100%;
-    padding: 3px 0px 10px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 3px 0px 10px;
+    width: 100%;
   }
 
   .knowledge .tools,
   .knowledge .frontend,
   .knowledge .backend {
-    width: 45%;
     border: 2px solid lightsteelblue;
     margin: 15px 0;
+    width: 45%;
   }
 
   .knowledge .info {
@@ -850,10 +849,10 @@ hr {
   }
 
   .projects-container {
-    width: 90vw;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
     grid-gap: 15px;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    width: 90vw;
   }
 
   .project-link:nth-child(1) {
@@ -861,15 +860,15 @@ hr {
   }
 
   .project-link {
-    height: 300px;
-    width: 98%;
-    max-width: 650px;
     align-self: center;
+    height: 300px;
     justify-self: center;
+    max-width: 650px;
+    width: 98%;
   }
 
   .contact-container {
-    width: 95%;
     justify-content: space-around;
+    width: 95%;
   }
 }
